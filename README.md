@@ -34,13 +34,10 @@ python manage.py runserver
 **Features:**
 
 - [x] Create Article
-- [ ] Update Article
-- [ ] Delete Article
-- [ ] Search Article
-- [ ] Filter Article
-
-1. [x] When user is not logged in then user land on landing page. If user is logged in then it lands on blog page.
-2. If user is online then should be green dot on user profile otherwise no dot appears.
+- [x] Update Article
+- [x] Delete Article
+- [x] Search Article
+- [x] Filter Article
 
 ## Resources
 
