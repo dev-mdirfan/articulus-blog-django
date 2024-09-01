@@ -1,0 +1,71 @@
+{% load static %}
+
+<!-- sidebar @s -->
+<div class="nk-sidebar nk-sidebar-fixed is-light " data-content="sidebarMenu">
+    <div class="nk-sidebar-element nk-sidebar-head">
+        <div class="nk-sidebar-brand">
+            <a href="{% url 'index' %}" class="logo-link nk-sidebar-logo">
+                <img class="logo-light logo-img" src="{% static 'images/logo.png' %}" srcset="{% static 'images/logo2x.png' %} 2x" alt="logo">
+                <img class="logo-dark logo-img" src="{% static 'images/logo-dark.png' %}" srcset="{% static 'images/logo-dark2x.png' %} 2x"
+                    alt="logo-dark">
+                <img class="logo-small logo-img logo-img-small" src="{% static 'images/logo-small.ico' %}"
+                    srcset="{% static 'images/logo-small2x.png' %} 2x" alt="logo-small">
+            </a>
+        </div>
+        <div class="nk-menu-trigger me-n2">
+            <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em
+                    class="icon ni ni-arrow-left"></em></a>
+            <a href="#" class="nk-nav-compact nk-quick-nav-icon d-none d-xl-inline-flex" data-target="sidebarMenu"><em
+                    class="icon ni ni-menu"></em></a>
+        </div>
+    </div><!-- .nk-sidebar-element -->
+    <div class="nk-sidebar-element">
+        <div class="nk-sidebar-content">
+            <div class="nk-sidebar-menu" data-simplebar>
+                <ul class="nk-menu">
+                    <!-- Heading -->
+                    <li class="nk-menu-heading">
+                        <h6 class="overline-title text-primary-alt">Main</h6>
+                    </li><!-- .nk-menu-item -->
+                    <li class="nk-menu-item">
+                        <a href="{% url 'blog' %}" class="nk-menu-link">
+                            <span class="nk-menu-icon"><em class="icon ni ni-blogger-fill"></em></span>
+                            <span class="nk-menu-text">Blog</span><span class="nk-menu-badge lg">NEW</span>
+                        </a>
+                    </li><!-- .nk-menu-item -->
+                    <li class="nk-menu-item">
+                        <a href="{% url 'projects' %}" class="nk-menu-link">
+                            <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb-fill"></em></span>
+                            <span class="nk-menu-text">Projects</span><span class="nk-menu-badge lg">NEW</span>
+                        </a>
+                    </li><!-- .nk-menu-item -->
+                    <li class="nk-menu-heading">
+                        <h6 class="overline-title text-primary-alt">Community</h6>
+                    </li><!-- .nk-menu-item -->
+                    <li class="nk-menu-item">
+                        <a href="{% url 'articulars' %}" class="nk-menu-link">
+                            <span class="nk-menu-icon"><em class="icon ni ni-user-group-fill"></em></span>
+                            <span class="nk-menu-text">Articulars</span>
+                        </a>
+                    </li><!-- .nk-menu-item -->
+                    <li class="nk-menu-heading">
+                        <h6 class="overline-title text-primary-alt">Settings</h6>
+                    </li><!-- .nk-menu-item -->
+                    <li class="nk-menu-item">
+                        <a href="{% url 'user_details' user.id %}" class="nk-menu-link">
+                            <span class="nk-menu-icon"><em class="icon ni ni-user-group-fill"></em></span>
+                            <span class="nk-menu-text">User Details</span>
+                        </a>
+                    </li><!-- .nk-menu-item -->
+                    <li class="nk-menu-item">
+                        <a href="{% url 'settings' %}" class="nk-menu-link">
+                            <span class="nk-menu-icon"><em class="icon ni ni-setting-fill"></em></span>
+                            <span class="nk-menu-text">Settings</span>
+                        </a>
+                    </li><!-- .nk-menu-item -->
+                </ul><!-- .nk-menu -->
+            </div><!-- .nk-sidebar-menu -->
+        </div><!-- .nk-sidebar-content -->
+    </div><!-- .nk-sidebar-element -->
+</div>
+<!-- sidebar @e -->
